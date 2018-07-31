@@ -11,10 +11,10 @@ RUN set -x && \
   rm -rf /var/lib/apt/lists/* && \
   install2.r --error \
     here \
-    jpmesh \
     kokudosuuchi \
     osmdata && \
   installGithub.r \
     "r-spatial/lwgeom" \
     "r-spatial/sf" \
+    "uribo/jpmesh" \
     "uribo/jpndistrict"
