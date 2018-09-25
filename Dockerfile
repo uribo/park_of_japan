@@ -16,5 +16,8 @@ RUN set -x && \
   installGithub.r \
     "r-spatial/lwgeom" \
     "r-spatial/sf" \
+    "tidyverse/ggplot2" \
     "uribo/jpmesh" \
-    "uribo/jpndistrict"
+    "uribo/jpndistrict" \
+    "uribo/sealr" \
+    "uribo/sessiondiverge"
