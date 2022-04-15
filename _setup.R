@@ -8,6 +8,7 @@ if (length(fs::dir_ls(here::here("data-raw/ksj_p13/"))) != 47L) {
       ~ kuniumi::read_ksj_p13(.pref_code = .x, .download = TRUE))
   fs::dir_ls(regexp = "P13", type = "directory") %>%
     purrr::walk(
-      ~ fs::file_move(.x, here::here("data-raw/ksj_p13"))
-    )
+      ~ fs::file_move(.x, here::here("data-raw/ksj_p13")))
+  fs::dir_ls(regexp = "P13.+.zip") %>%
+    unlink()
 }
